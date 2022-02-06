@@ -1,0 +1,251 @@
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+
+body {
+    background-color: #242423;
+
+    font-family: 'Average Sans', sans-serif;
+}
+
+
+/* header */
+
+.topo {
+    height: 8vh;   
+    
+    background-color: #1e1e1f; 
+    box-shadow: 0px 5px 5px 3px #000000e3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-mp {
+    max-height: 30px;
+    margin:0 7px;
+
+    display: flex;
+}
+
+.container-logos {
+    max-width: 150px;
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+}
+
+.logos-mp:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+}
+
+.principal {
+    height: 500px;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Apresentação */
+
+.apresentacao {
+    height: 80%;
+    max-width: 455px;
+    border-radius: 5%;
+    
+    background-color: #1e1e1f; 
+    box-shadow: 0px 5px 5px 1px #000000e3;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* LOGO */
+
+.back {
+    letter-spacing: 3px;
+
+    text-decoration: none;
+}
+
+.titulo-principal {
+    font-size: 76.5px;
+    margin: 10px;
+    
+    color: #9c67da;
+    
+    text-align: center;
+}
+
+.titulo-principal:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.2s;
+}
+
+#hr1 {
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 100%;
+
+    background-image: radial-gradient(#b4b4b4, #ffffff00);
+}
+
+#text {
+    font-size: 100%;
+    margin: 10px;    
+
+    color: #fff;
+    
+    text-align: center;
+}
+
+
+/* lOGIN */
+
+.login {
+    height: 80%;
+    max-width: 450px;
+    border-radius: 5%;
+    
+    background-color: #1e1e1f; 
+    box-shadow: 0px 5px 5px 1px #000000e3;
+
+    align-items: center;
+    text-align: center;
+}
+
+
+.entrar input {
+    width: 90%;
+    margin: 20px;
+}
+
+.entrar h3 {
+    font-size: 30px;
+
+    color: #fff;
+}
+
+.entrar button {
+    padding: 10px 80px;
+    margin: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    height: 30px;
+    width: 100%;
+    margin: 30px 0px 10px 0px;
+    text-indent: 5px;
+    border-radius: 5px;
+    
+    color: black;
+    background-color: #fff;
+
+    outline: none;
+    border: none;
+}
+
+button {
+    border-radius: 5px;
+    
+    color: #fff;
+    background-color:  #9c67da;
+    
+    cursor: pointer;
+    border: none;
+    font-family: cursive;
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+    
+    transition: 0.2s;
+}
+
+
+/* CRIAR CONTA */
+
+.container-ou {
+    font-size: 30px;
+    
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+#hr2 {
+    width: 60%;
+    margin: 30px;
+    border-radius: 100%;
+
+    background-image: radial-gradient(#b4b4b4, #ffffff00);
+}
+
+#hr3 {
+    width: 60%;
+    margin: 30px;
+    border-radius: 100%;
+
+    background-image: radial-gradient(#b4b4b4, #ffffff00);
+}
+
+.criar button {
+    padding: 10px 100px;
+    margin: 10px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 950px) {
+    .principal {
+        margin-top: 200px;
+
+        flex-direction: column;
+    }
+
+    .login {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .principal{
+        margin-top: 200px;
+        
+        position: center;
+        justify-content: center;
+    }
+
+    .titulo-principal {
+        font-size: 250%;
+    }
+    
+    .apresentacao {
+        width: 280px;
+    }
+
+    .login {
+        width: 280px;
+    }
+}
